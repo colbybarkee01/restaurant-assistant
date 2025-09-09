@@ -81,6 +81,7 @@ Other Qs → AI fallback via OpenAI
 
 
 📈 Portfolio Notes
+
 This project is part of my AI consulting portfolio.
 
 It demonstrates:
@@ -89,11 +90,13 @@ It demonstrates:
 - Delivering a clean, demo-ready web app that businesses can immediately understand.
 
 🔒 Security
-.env (with your real API key) is excluded via .gitignore.
-.env.example is included to help others run the project safely.
+
+- .env (with your real API key) is excluded via .gitignore.
+- .env.example is included to help others run the project safely.
 
 
 📜 License
+
 MIT License.
 
 
