@@ -16,8 +16,9 @@ This project demonstrates how local business data can be combined with AI to pro
 - Web interface (static/index.html) for chatting with the bot.
 
 📂 Project Structure
+
 restaurant-assistant/
-restaurant-assistant/
+
 ├── app/
 │   ├── main.py          # FastAPI app + routing logic
 │   └── data/faq.json    # FAQ + table availability
@@ -28,7 +29,6 @@ restaurant-assistant/
 ├── requirements.txt     # Python dependencies
 ├── run.sh               # Startup script (optional)
 └── README.md
-
 
 🛠️ Setup
 1. Clone repo
