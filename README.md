@@ -2,10 +2,10 @@
 
 🍽️ Restaurant AI Assistant
 An AI-powered assistant for restaurants, built with FastAPI.
-✅ Answers common questions (hours, location, vegan options, menu items) directly from structured FAQ data.
-✅ Handles simple reservation requests using mock availability.
-✅ Falls back to an LLM (OpenAI API) when a question isn’t covered by FAQs.
-✅ Includes a lightweight web chat UI for testing and demos.
+- ✅ Answers common questions (hours, location, vegan options, menu items) directly from structured FAQ data.
+- ✅ Handles simple reservation requests using mock availability.
+- ✅ Falls back to an LLM (OpenAI API) when a question isn’t covered by FAQs.
+- ✅ Includes a lightweight web chat UI for testing and demos.
 This project demonstrates how local business data can be combined with AI to provide practical, real-world solutions.
 
 🚀 Features
