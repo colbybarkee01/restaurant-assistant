@@ -1,0 +1,37 @@
+{
+  "faqs": [
+    {
+      "q": "What are your hours?",
+      "a": "We are open Sun\u2013Thu 11am\u20139pm, Fri\u2013Sat 11am\u201310pm."
+    },
+    {
+      "q": "Where are you located?",
+      "a": "123 Main St, Kalispell, MT."
+    },
+    {
+      "q": "Do you have vegan options?",
+      "a": "Yes\u2014our roasted veggie bowl and hummus plate are vegan."
+    },
+    {
+      "q": "Can I see the menu?",
+      "a": "Our sample menu: burgers, salads, flatbreads, and weekly specials."
+    }
+  ],
+  "tables": [
+    {
+      "time": "2025-09-05T18:00:00",
+      "size": 2,
+      "available": true
+    },
+    {
+      "time": "2025-09-05T19:00:00",
+      "size": 4,
+      "available": true
+    },
+    {
+      "time": "2025-09-05T20:00:00",
+      "size": 2,
+      "available": false
+    }
+  ]
+}

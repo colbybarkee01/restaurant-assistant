@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant AI Assistant</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; max-width: 720px; }
+    .row { display: flex; gap: .5rem; margin-top: .5rem; }
+    textarea { width: 100%; height: 100px; }
+    .bubble { background: #f7f7f7; border-radius: 8px; padding: .5rem .75rem; margin: .5rem 0; }
+    .you { background: #e6f2ff; }
+    .bot { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>🍽️ Restaurant AI Assistant</h1>
+  <div class="card">
+    <div id="chat"></div>
+    <div class="row">
+      <textarea id="input" placeholder="Ask about hours, menu, or table..."></textarea>
+    </div>
+    <div class="row">
+      <input id="name" placeholder="Name" />
+      <input id="party" type="number" placeholder="Party size" />
+      <input id="time" placeholder="Time ISO (e.g., 2025-09-05T18:00:00)" />
+      <button id="send">Send</button>
+    </div>
+  </div>
+
+<script>
+const chat = document.getElementById('chat');
+const input = document.getElementById('input');
+const send = document.getElementById('send');
+
+function addBubble(text, cls) {
+  const div = document.createElement('div');
+  div.className = 'bubble ' + cls;
+  div.textContent = text;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+send.addEventListener('click', async () => {
+  const content = input.value.trim();
+  if (!content) return;
+  addBubble(content, 'you');
+  input.value='';
+  const payload = {
+    messages: [{role:'user', content}],
+    name: document.getElementById('name').value || null,
+    party_size: parseInt(document.getElementById('party').value || '0') || null,
+    time_iso: document.getElementById('time').value || null
+  };
+  const r = await fetch('/chat', {
+    method:'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify(payload)
+  });
+  const j = await r.json();
+  addBubble(j.reply, 'bot');
+});
+</script>
+</body>
+</html>
