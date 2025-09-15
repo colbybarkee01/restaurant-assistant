@@ -76,8 +76,9 @@ Server runs at: http://127.0.0.1:8000
 Open the chat UI:
 http://127.0.0.1:8000/static/index.html
 
+---
 
-💻 Example Usage
+## 💻 Example Usage
 - “What are your hours?” → FAQ response
 - “Where are you located?” → FAQ response
 - “Do you have vegan options?” → FAQ response
