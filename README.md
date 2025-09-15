@@ -9,14 +9,18 @@ An AI-powered assistant for restaurants, built with FastAPI.
 - ✅ Includes a lightweight web chat UI for testing and demos.
 This project demonstrates how local business data can be combined with AI to provide practical, real-world solutions.
 
-🚀 Features
+--- 
+
+## 🚀 Features
 - FastAPI backend with /chat and /health endpoints.
 - Local FAQ lookup (no API usage for common Qs).
 - Reservation logic (mock table availability via JSON).
 - LLM fallback for open-ended questions.
 - Web interface (static/index.html) for chatting with the bot.
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
 
 restaurant-assistant/
 
@@ -40,7 +44,9 @@ restaurant-assistant/
 
 └── README.md
 
-🛠️ Setup
+---
+
+## 🛠️ Setup
 1. Clone repo
 git clone https://github.com/<your-username>/restaurant-assistant.git
 cd restaurant-assistant
@@ -79,8 +85,9 @@ http://127.0.0.1:8000/static/index.html
 
 Other Qs → AI fallback via OpenAI
 
+--- 
 
-📈 Portfolio Notes
+## 📈 Portfolio Notes
 
 This project is part of my AI consulting portfolio.
 
@@ -89,15 +96,19 @@ It demonstrates:
 - Integrating structured data (FAQs, availability) with an LLM.
 - Delivering a clean, demo-ready web app that businesses can immediately understand.
 
-🔒 Security
+---
+
+## 🔒 Security
 
 - .env (with your real API key) is excluded via .gitignore.
 - .env.example is included to help others run the project safely.
 
-
-📜 License
+--- 
+## 📜 License
 
 MIT License.
+
+---
 
 
 docs: polished README with setup instructions and portfolio notes
